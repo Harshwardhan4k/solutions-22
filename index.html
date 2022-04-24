@@ -1,252 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Solutions 22</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solutions 22</title>
 
-		<meta property="og:title" content="Solutions 22" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="__website-url__" />
-		<meta
-			property="og:description"
-			content="Technical Board. Army Institute of Technology, Pune."
-		/>
-		<meta
-			property="og:image"
-			content="__https://absolute/path/to/image.png__"
-		/>
-		<meta property="og:image:width" content="__dimensions-x__" />
-		<meta property="og:image:height" content="__dimensions-y__" />
+    <meta property="og:title" content="Solutions 22" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="__website-url__" />
+    <meta
+      property="og:description"
+      content="Technical Board. Army Institute of Technology, Pune."
+    />
+    <meta
+      property="og:image"
+      content="__https://absolute/path/to/image.png__"
+    />
+    <meta property="og:image:width" content="__dimensions-x__" />
+    <meta property="og:image:height" content="__dimensions-y__" />
 
-		<meta name="twitter:title" content="Solutions 22" />
-		<meta
-			name="twitter:description"
-			content=" Technical Board. Army Institute of Technology, Pune."
-		/>
-		<meta
-			name="twitter:image"
-			content="__https://absolute/path/to/image.png__"
-		/>
-		<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Solutions 22" />
+    <meta
+      name="twitter:description"
+      content=" Technical Board. Army Institute of Technology, Pune."
+    />
+    <meta
+      name="twitter:image"
+      content="__https://absolute/path/to/image.png__"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-		<link rel="stylesheet" href="./styles.css" />
-		<script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
 
-		<!--<script defer src="./assets/particles/particleScript.js"></script>-->
-	</head>
-	<body>
-		<div class="modal hidden" id="modal">
-			<div class="wrapper">
-				<div class="box">
-					<div class="tab">
-						<button
-							class="tablinks"
-							style="width: 40%"
-							onclick="openSection(event, 'loginpage')"
-						>
-							Login
-						</button>
-						<button
-							class="tablinks"
-							style="width: 40%"
-							onclick="openSection(event, 'signuppage')"
-						>
-							Sign Up
-						</button>
-						<button
-							class="tablinks close-modal"
-							id="closeLoginModal"
-							style="width: 15%"
-						>
-							X
-						</button>
-					</div>
-					<div id="loginpage" class="loginbox tabcontent">
-						<div class="input">
-							<div class="outer">
-								<form class="register-form">
-									<input
-										class="brd1 login-email"
-										type="email"
-										placeholder="email"
-									/><br />
-									<input
-										class="brd2 login-password"
-										type="password"
-										placeholder="Password"
-									/><br /><br />
-									<div class="log">
-										<button class="login elogin">
-											Log In
-										</button>
-										<label class="fg forgot-password"
-											>Forget Password?</label
-										>
-									</div>
-									<br /><br />
-									<img
-										src="./assets/login_dash.svg"
-									/><br /><br />
-									<div class="logbut2">
-										<button class="login glogin">
-											<svg
-												style="
-													margin-right: 10px;
-													padding-top: 5px;
-													margin-bottom: -4px;
-												"
-												viewBox="0 0 24 24"
-												width="24"
-												height="24"
-												xmlns="http://www.w3.org/2000/svg"
-											>
-												<g
-													transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)"
-												>
-													<path
-														fill="#4285F4"
-														d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -10.684 60.329 L -6.824 60.329 C -4.564 58.239 -3.264 55.159 -3.264 51.509 Z"
-													/>
-													<path
-														fill="#34A853"
-														d="M -14.754 63.239 C -11.514 63.239 -8.804 62.159 -6.824 60.329 L -10.684 57.329 C -11.764 58.049 -13.134 58.489 -14.754 58.489 C -17.884 58.489 -20.534 56.379 -21.484 53.529 L -25.464 53.529 L -25.464 56.619 C -23.494 60.539 -19.444 63.239 -14.754 63.239 Z"
-													/>
-													<path
-														fill="#FBBC05"
-														d="M -21.484 53.529 C -21.734 52.809 -21.864 52.039 -21.864 51.239 C -21.864 50.439 -21.724 49.669 -21.484 48.949 L -21.484 45.859 L -25.464 45.859 C -26.284 47.479 -26.754 49.299 -26.754 51.239 C -26.754 53.179 -26.284 54.999 -25.464 56.619 L -21.484 53.529 Z"
-													/>
-													<path
-														fill="#EA4335"
-														d="M -14.754 43.989 C -12.984 43.989 -11.404 44.599 -10.154 45.789 L -6.734 42.369 C -8.804 40.429 -11.514 39.239 -14.754 39.239 C -19.444 39.239 -23.494 41.939 -25.464 45.859 L -21.484 48.949 C -20.534 46.099 -17.884 43.989 -14.754 43.989 Z"
-													/>
-												</g></svg
-											>Log In
-										</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div id="signuppage" class="signupbox tabcontent">
-						<div class="signupinputs">
-							<div class="signupinputs1">
-								<input
-									class="brd1 username-value"
-									type="name"
-									placeholder="Username"
-								/>
-								<input
-									class="brd1 dn college-value"
-									type="name"
-									placeholder="College"
-								/>
-							</div>
-							<br />
-							<br />
-							<div class="signupinputs2">
-								<input
-									class="brd2 up mail-value"
-									type="name"
-									placeholder="Email"
-								/>
-								<input
-									class="brd2 password-value"
-									type="password"
-									placeholder="Password"
-								/>
-							</div>
-						</div>
-						<div class="signupbut">
-							<div class="sub">
-								<button class="signupbut1 register">
-									Sign Up
-								</button>
-							</div>
-							<div class="sub">
-								<img src="./assets/login_dash.svg" />
-							</div>
-							<div class="sub">
-								<button class="signupbut1 google-reg">
-									<svg
-										style="
-											margin-right: 10px;
-											padding-top: 5px;
-											margin-bottom: -4px;
-										"
-										viewBox="0 0 24 24"
-										width="24"
-										height="24"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<g
-											transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)"
-										>
-											<path
-												fill="#4285F4"
-												d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -10.684 60.329 L -6.824 60.329 C -4.564 58.239 -3.264 55.159 -3.264 51.509 Z"
-											/>
-											<path
-												fill="#34A853"
-												d="M -14.754 63.239 C -11.514 63.239 -8.804 62.159 -6.824 60.329 L -10.684 57.329 C -11.764 58.049 -13.134 58.489 -14.754 58.489 C -17.884 58.489 -20.534 56.379 -21.484 53.529 L -25.464 53.529 L -25.464 56.619 C -23.494 60.539 -19.444 63.239 -14.754 63.239 Z"
-											/>
-											<path
-												fill="#FBBC05"
-												d="M -21.484 53.529 C -21.734 52.809 -21.864 52.039 -21.864 51.239 C -21.864 50.439 -21.724 49.669 -21.484 48.949 L -21.484 45.859 L -25.464 45.859 C -26.284 47.479 -26.754 49.299 -26.754 51.239 C -26.754 53.179 -26.284 54.999 -25.464 56.619 L -21.484 53.529 Z"
-											/>
-											<path
-												fill="#EA4335"
-												d="M -14.754 43.989 C -12.984 43.989 -11.404 44.599 -10.154 45.789 L -6.734 42.369 C -8.804 40.429 -11.514 39.239 -14.754 39.239 C -19.444 39.239 -23.494 41.939 -25.464 45.859 L -21.484 48.949 C -20.534 46.099 -17.884 43.989 -14.754 43.989 Z"
-											/>
-										</g></svg
-									>Sign Up
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="overlay hidden" id="overlay"></div>
-		<!--<canvas id="canvas-container"></canvas>-->
-		<header>
-			<nav class="navbar">
-				<a
-					href="javascript:void(0)"
-					id="mobile-nav-menu"
-					role="button"
-					tabindex="0"
-				>
-					<img
-						src="./assets/navbar/nav-icon-button-menu.svg"
-						alt="Menu"
-					/>
-				</a>
-				<ul>
-					<li style="--item-number: 0">
-						<a title="Home" id="nav-link-home" href="./index.html">
-							<span>Home</span>
-							<img
-								src="./assets/navbar/nav-icon-button-home.svg"
-								alt="Home"
-							/>
-						</a>
-					</li>
-					<li style="--item-number: 1">
-						<a
-							title="Events"
-							id="nav-link-events"
-							href="/events/index.html"
-						>
-							<span>Events</span>
-							<img
-								src="./assets/navbar/nav-icon-button-events.svg"
-								alt="Events"
-							/>
-						</a>
-					</li>
-					<!-- <li style="--item-number: 2">
+    <script defer src="./login/script.js"></script>
+    <script defer src="./index.js"></script>
+    <!--<script defer src="./assets/particles/particleScript.js"></script>-->
+  </head>
+  <body>
+    <div class="modal hidden" id="modal">
+      <div class="wrapper">
+        <div class="box">
+          <div class="tab">
+            <button
+              class="tablinks"
+              style="width: 40%"
+              onclick="openSection(event, 'loginpage')"
+            >
+              Login
+            </button>
+            <button
+              class="tablinks"
+              style="width: 40%"
+              onclick="openSection(event, 'signuppage')"
+            >
+              Sign Up
+            </button>
+            <button
+              class="tablinks close-modal"
+              id="closeLoginModal"
+              style="width: 15%"
+            >
+              X
+            </button>
+          </div>
+          <div id="loginpage" class="loginbox tabcontent">
+            <div class="input">
+              <div class="outer">
+                <form class="register-form">
+                  <input
+                    class="brd1 login-email"
+                    type="email"
+                    placeholder="email"
+                  /><br />
+                  <input
+                    class="brd2 login-password"
+                    type="password"
+                    placeholder="Password"
+                  /><br /><br />
+                  <div class="log">
+                    <button class="login elogin">Log In</button>
+                    <label class="fg forgot-password">Forget Password?</label>
+                  </div>
+                  <br /><br />
+                  <img src="./assets/login_dash.svg" /><br /><br />
+                  <div class="logbut2">
+                    <button class="login glogin">
+                      <svg
+                        style="
+                          margin-right: 10px;
+                          padding-top: 5px;
+                          margin-bottom: -4px;
+                        "
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)"
+                        >
+                          <path
+                            fill="#4285F4"
+                            d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -10.684 60.329 L -6.824 60.329 C -4.564 58.239 -3.264 55.159 -3.264 51.509 Z"
+                          />
+                          <path
+                            fill="#34A853"
+                            d="M -14.754 63.239 C -11.514 63.239 -8.804 62.159 -6.824 60.329 L -10.684 57.329 C -11.764 58.049 -13.134 58.489 -14.754 58.489 C -17.884 58.489 -20.534 56.379 -21.484 53.529 L -25.464 53.529 L -25.464 56.619 C -23.494 60.539 -19.444 63.239 -14.754 63.239 Z"
+                          />
+                          <path
+                            fill="#FBBC05"
+                            d="M -21.484 53.529 C -21.734 52.809 -21.864 52.039 -21.864 51.239 C -21.864 50.439 -21.724 49.669 -21.484 48.949 L -21.484 45.859 L -25.464 45.859 C -26.284 47.479 -26.754 49.299 -26.754 51.239 C -26.754 53.179 -26.284 54.999 -25.464 56.619 L -21.484 53.529 Z"
+                          />
+                          <path
+                            fill="#EA4335"
+                            d="M -14.754 43.989 C -12.984 43.989 -11.404 44.599 -10.154 45.789 L -6.734 42.369 C -8.804 40.429 -11.514 39.239 -14.754 39.239 C -19.444 39.239 -23.494 41.939 -25.464 45.859 L -21.484 48.949 C -20.534 46.099 -17.884 43.989 -14.754 43.989 Z"
+                          />
+                        </g></svg
+                      >Log In
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="signuppage" class="signupbox tabcontent">
+            <div class="signupinputs">
+              <div class="signupinputs1">
+                <input
+                  class="brd1 username-value"
+                  type="name"
+                  placeholder="Username"
+                />
+                <input
+                  class="brd1 dn college-value"
+                  type="name"
+                  placeholder="College"
+                />
+              </div>
+              <br />
+              <br />
+              <div class="signupinputs2">
+                <input
+                  class="brd2 up mail-value"
+                  type="name"
+                  placeholder="Email"
+                />
+                <input
+                  class="brd2 password-value"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div class="signupbut">
+              <div class="sub">
+                <button class="signupbut1 register">Sign Up</button>
+              </div>
+              <div class="sub">
+                <img src="./assets/login_dash.svg" />
+              </div>
+              <div class="sub">
+                <button class="signupbut1 google-reg">
+                  <svg
+                    style="
+                      margin-right: 10px;
+                      padding-top: 5px;
+                      margin-bottom: -4px;
+                    "
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)">
+                      <path
+                        fill="#4285F4"
+                        d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -10.684 60.329 L -6.824 60.329 C -4.564 58.239 -3.264 55.159 -3.264 51.509 Z"
+                      />
+                      <path
+                        fill="#34A853"
+                        d="M -14.754 63.239 C -11.514 63.239 -8.804 62.159 -6.824 60.329 L -10.684 57.329 C -11.764 58.049 -13.134 58.489 -14.754 58.489 C -17.884 58.489 -20.534 56.379 -21.484 53.529 L -25.464 53.529 L -25.464 56.619 C -23.494 60.539 -19.444 63.239 -14.754 63.239 Z"
+                      />
+                      <path
+                        fill="#FBBC05"
+                        d="M -21.484 53.529 C -21.734 52.809 -21.864 52.039 -21.864 51.239 C -21.864 50.439 -21.724 49.669 -21.484 48.949 L -21.484 45.859 L -25.464 45.859 C -26.284 47.479 -26.754 49.299 -26.754 51.239 C -26.754 53.179 -26.284 54.999 -25.464 56.619 L -21.484 53.529 Z"
+                      />
+                      <path
+                        fill="#EA4335"
+                        d="M -14.754 43.989 C -12.984 43.989 -11.404 44.599 -10.154 45.789 L -6.734 42.369 C -8.804 40.429 -11.514 39.239 -14.754 39.239 C -19.444 39.239 -23.494 41.939 -25.464 45.859 L -21.484 48.949 C -20.534 46.099 -17.884 43.989 -14.754 43.989 Z"
+                      />
+                    </g></svg
+                  >Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden" id="overlay"></div>
+    <!--<canvas id="canvas-container"></canvas>-->
+    <header>
+      <nav class="navbar">
+        <a
+          href="javascript:void(0)"
+          id="mobile-nav-menu"
+          role="button"
+          tabindex="0"
+        >
+          <img src="./assets/navbar/nav-icon-button-menu.svg" alt="Menu" />
+        </a>
+        <ul>
+          <li style="--item-number: 0">
+            <a title="Home" id="nav-link-home" href="./index.html">
+              <span>Home</span>
+              <img src="./assets/navbar/nav-icon-button-home.svg" alt="Home" />
+            </a>
+          </li>
+          <li style="--item-number: 1">
+            <a title="Events" id="nav-link-events" href="/events/index.html">
+              <span>Events</span>
+              <img
+                src="./assets/navbar/nav-icon-button-events.svg"
+                alt="Events"
+              />
+            </a>
+          </li>
+          <!-- <li style="--item-number: 2">
 						<a
 							title="Our Team"
 							id="nav-link-team"
@@ -272,187 +253,175 @@
 							/>
 						</a>
 					</li> -->
-					<li style="--item-number: 2">
-						<a
-							title="Account"
-							id="nav-link-account"
-							href="javascript:void(0)"
-							class="show-modal"
-						>
-							<span>Login</span>
-							<img
-								src="./assets/navbar/nav-icon-button-account.svg"
-								alt="Account"
-							/>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+          <li style="--item-number: 2">
+            <a
+              title="Account"
+              id="nav-link-account"
+              href="javascript:void(0)"
+              class="show-modal"
+            >
+              <span>Login</span>
+              <img
+                src="./assets/navbar/nav-icon-button-account.svg"
+                alt="Account"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-		<main>
-			<section id="hero-section" title="Solutions 2022">
-				<div id="institute-title" class="hero-content-text">
-					Army Institute of Technology, Pune
-				</div>
-				<div id="board-title" class="hero-content-text">
-					Technical Board
-				</div>
-				<img
-					id="hero-content-svg"
-					src="./assets/hero-content.svg"
-					alt="Hero content"
-				/>
-				<div id="event-period-dates" class="hero-content-text">
-					06th May - 08th May
-				</div>
-			</section>
-			<section id="about-us">
-				<h1>About Us</h1>
-				<div class="rugged-card">
-					<div class="text-content">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Veritatis adipisci cum a esse, sit
-							consequatur, vero incidunt nihil id molestias eos
-							alias expedita ab eaque asperiores, praesentium
-							nostrum odio maiores temporibus aut exercitationem
-							magnam atque impedit corporis. Est dolores velit
-							consequuntur, facilis alias perspiciatis, eveniet
-							magnam officia illo ab suscipit.
-						</p>
-					</div>
-					<div class="video-embed">
-						<iframe
-							src="https://www.youtube.com/embed/ovydAZiPK5o"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
-				</div>
-			</section>
-			<section id="sponsors">
-				<h1>Sponsors</h1>
-				<div class="coming-soon">
-					<a href="/sponsor/index.html">Want to sponsor Us?</a>
-				</div>
-			</section>
-			<section id="statistics">
-				<h1>Statistics</h1>
-				<div class="coming-soon">Coming Soon!</div>
-			</section>
-		</main>
+    <main>
+      <section id="hero-section" title="Solutions 2022">
+        <div id="institute-title" class="hero-content-text">
+          Army Institute of Technology, Pune
+        </div>
+        <div id="board-title" class="hero-content-text">Technical Board</div>
+        <img
+          id="hero-content-svg"
+          src="./assets/hero-content.svg"
+          alt="Hero content"
+        />
+        <div id="event-period-dates" class="hero-content-text">
+          06th May - 08th May
+        </div>
+      </section>
+      <section id="about-us">
+        <h1>About Us</h1>
+        <div class="rugged-card">
+          <div class="text-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              adipisci cum a esse, sit consequatur, vero incidunt nihil id
+              molestias eos alias expedita ab eaque asperiores, praesentium
+              nostrum odio maiores temporibus aut exercitationem magnam atque
+              impedit corporis. Est dolores velit consequuntur, facilis alias
+              perspiciatis, eveniet magnam officia illo ab suscipit.
+            </p>
+          </div>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/ovydAZiPK5o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <h1>Sponsors</h1>
+        <div class="coming-soon">
+          <a href="/sponsor/index.html">Want to sponsor Us?</a>
+        </div>
+      </section>
+      <section id="statistics">
+        <h1>Statistics</h1>
+        <div class="coming-soon">Coming Soon!</div>
+      </section>
+    </main>
 
-		<footer>
-			<div class="footer-content">
-				<section>
-					<h2>Get to know us</h2>
-					<ul>
-						<li>
-							<a
-								title="Techical board"
-								href="https://ait-techboard.github.io/hackathons/"
-								>Technical board</a
-							>
-						</li>
-						<li>
-							<a title="About us" href="#about-us">About us</a>
-						</li>
-						<li>
-							<a title="Our team" href="/our-team/index.html"
-								>Our team</a
-							>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Site map</h2>
-					<ul>
-						<li><a title="Home" href="#hero-section">Home</a></li>
-						<li><a title="About" href="#about-us">About</a></li>
-						<li>
-							<a title="Sponsors" href="#sponsors">Sponsors</a>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Follow us on</h2>
-					<ul id="socials-links">
-						<li>
-							<a
-								title="Github"
-								href="https://github.com/AIT-TECHBOARD"
-							>
-								<img
-									src="./assets/socials/social-github.svg"
-									alt="Github"
-								/>
-							</a>
-						</li>
-						<li>
-							<a
-								title="Instagram"
-								href="https://www.instagram.com/aittechnicalboard"
-							>
-								<img
-									src="./assets/socials/social-instagram.svg"
-									alt="Instagram"
-								/>
-							</a>
-						</li>
-						<li>
-							<a
-								title="LinkedIn"
-								href="https://www.linkedin.com/company/technical-board-ait"
-							>
-								<img
-									src="./assets/socials/social-linkedin.svg"
-									alt="LinkedIn"
-								/>
-							</a>
-						</li>
-						<li>
-							<a
-								title="Facebook"
-								href="https://www.facebook.com/groups/680716451983061/"
-							>
-								<img
-									src="./assets/socials/social-facebook.svg"
-									alt="Facebook"
-								/>
-							</a>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</footer>
-	</body>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
+    <footer>
+      <div class="footer-content">
+        <section>
+          <h2>Get to know us</h2>
+          <ul>
+            <li>
+              <a
+                title="Techical board"
+                href="https://ait-techboard.github.io/hackathons/"
+                >Technical board</a
+              >
+            </li>
+            <li>
+              <a title="About us" href="#about-us">About us</a>
+            </li>
+            <li>
+              <a title="Our team" href="/our-team/index.html">Our team</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Site map</h2>
+          <ul>
+            <li><a title="Home" href="#hero-section">Home</a></li>
+            <li><a title="About" href="#about-us">About</a></li>
+            <li>
+              <a title="Sponsors" href="#sponsors">Sponsors</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Follow us on</h2>
+          <ul id="socials-links">
+            <li>
+              <a title="Github" href="https://github.com/AIT-TECHBOARD">
+                <img src="./assets/socials/social-github.svg" alt="Github" />
+              </a>
+            </li>
+            <li>
+              <a
+                title="Instagram"
+                href="https://www.instagram.com/aittechnicalboard"
+              >
+                <img
+                  src="./assets/socials/social-instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                title="LinkedIn"
+                href="https://www.linkedin.com/company/technical-board-ait"
+              >
+                <img
+                  src="./assets/socials/social-linkedin.svg"
+                  alt="LinkedIn"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                title="Facebook"
+                href="https://www.facebook.com/groups/680716451983061/"
+              >
+                <img
+                  src="./assets/socials/social-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-		// Your web app's Firebase configuration
-		const firebaseConfig = {
-			apiKey: "AIzaSyBoPP1uJOmOl8qPxGQ8z4SK821gUAUXOls",
-			authDomain: "testing-4843e.firebaseapp.com",
-			projectId: "testing-4843e",
-			storageBucket: "testing-4843e.appspot.com",
-			messagingSenderId: "639151628755",
-			appId: "1:639151628755:web:4e26ff5ffa2affcfbccf26",
-		};
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBoPP1uJOmOl8qPxGQ8z4SK821gUAUXOls",
+      authDomain: "testing-4843e.firebaseapp.com",
+      projectId: "testing-4843e",
+      storageBucket: "testing-4843e.appspot.com",
+      messagingSenderId: "639151628755",
+      appId: "1:639151628755:web:4e26ff5ffa2affcfbccf26",
+    };
 
-		// Initialize Firebase
-		console.log("firebase auth");
-		const app = initializeApp(firebaseConfig);
-	</script>
-	<script src="./index.js"></script>
-	<script src="./login/script.js"></script>
-	<script type="module" src="./login.js"></script>
-	<script type="module" src="./database.js"></script>
-	<script type="module" src="./groupReg.js"></script>
-	<script type="module" src="./app.js"></script>
+    // Initialize Firebase
+    console.log("firebase auth");
+    const app = initializeApp(firebaseConfig);
+  </script>
+  <script src="./index.js"></script>
+  <script src="./login/script.js"></script>
+  <script type="module" src="./login.js"></script>
+  <script type="module" src="./database.js"></script>
+  <script type="module" src="./groupReg.js"></script>
+  <script type="module" src="./app.js"></script>
 </html>
